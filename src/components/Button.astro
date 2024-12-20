@@ -1,0 +1,26 @@
+---
+
+const {
+  label,
+  idName = "",
+  href = "", // For link navigation
+  target = "_self", // Optional target for links
+} = Astro.props;
+
+---
+
+{href ? (
+  <a 
+    id={`${idName}`}  
+    href={href} 
+    target={target}
+    aria-disabled={!href ? "true" : undefined}
+    class="button"
+  >
+    {label}
+  </a>
+) : (
+  <button id={`${idName}`}>
+    {label}
+  </button>
+)}

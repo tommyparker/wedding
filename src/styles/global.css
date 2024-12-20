@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'Athletics';
+    src: url('/fonts/Athletics-Bold.woff') format('woff'),
+         url('/fonts/Athletics-Bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+  }
+
+:root {
+    --display: 2.5rem; /* 40px */
+    --main-title: 1.5rem; /* 24px */
+    --subtitle: 1.25rem; /* 20px */
+    --button-text: 0.875rem; /* 14px */
+    --label-text: 0.75rem; /* 12px */
+    --body: 1rem; /* 16px */
+    --small-text: 0.75rem; /* 12px */
+
+    --padding-lg: 3.25rem; /* 52px */
+    --padding-md: 2.5rem; /* 40px */
+    --padding-sm: 1.5rem; /* 24px */
+
+    --base: #E8D9BA;
+    --black: #100F0F;
+    --white: #ffffff;
+    --spot1: #4552AF;
+    --spot2: #D35445;
+    --highlight: rgba(0,0,0,0.1);
+    --highlight-empty: rgba(0,0,0,0);
+    
+    --font1: 'schoolbook';
+    --font2: 'Athletics';
+    
+    --line: 0.0625rem; /* 1px */
+    --radius: var(--padding-lg);
+
+}
+    /* Medium */
+    @media (min-width: 481px) {
+        :root {
+            --display: 3.5rem; /* 56px */
+            --main-title: 2rem; /* 32px */
+            --subtitle: 1.5rem; /* 24px */
+            --button-text: 1rem; /* 16px */
+            --label-text: 0.75rem; /* 12px */
+            --body: 1.25rem; /* 20px */
+            --small-text: 0.75rem; /* 12px */
+        }
+    }
+
+    /* Large */
+    @media (min-width: 769px) {
+        :root {
+            --display: 4.5rem; /* 72px */
+            --main-title: 2.5rem; /* 40px */
+            --subtitle: 1.75rem; /* 28px */
+            --button-text: 1.125rem; /* 18px */
+            --label-text: 0.875rem; /* 14px */
+            --body: 1.25rem; /* 20px */
+            --small-text: 0.875rem; /* 14px */
+        }
+    }
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--base);
+}
+  
+a { color: inherit; }
+
+.container {
+    position: relative;
+    padding: var(--padding-lg);
+}
+
+.full-container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.grid-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+}
+
+* {
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+/* Typography */
+
+h1, h2, h3 {
+    font-family: var(--font1), serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    font-family: var(--font2), sans-serif;
+}
+
+h1 {
+    font-size: var(--display);
+    line-height: 1.2;
+    margin-bottom: var(--padding-sm);
+}
+
+h2 {
+    font-size: var(--main-title);
+    line-height: 1.2;
+    margin-bottom: var(--padding-sm);
+}
+
+h3 {
+    font-size: var(--subtitle);
+    line-height: 1.2;
+    margin-bottom: var(--padding-sm);
+}
+
+p {
+    font-size: var(--body);
+    line-height: 1.4;
+    margin-bottom: calc(var(--body) / 2);
+}
+
+/* Buttons */
+
+button,
+a.button {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  gap: 0.5rem;
+  font-family: var(--font1), serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--button-text);
+  line-height: 1.5rem;
+  padding: 0.5rem 1rem;
+  height: 1.5rem;
+  border: var(--line) solid var(--black);
+  width: fit-content;
+  text-decoration: none;
+  color: var(--black);
+  background: var(--base);
+  border-radius: var(--radius);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition: var(--easeQuick);
+  transition: var(--easeQuick);
+  position: relative;
+  pointer-events: auto;
+}
+
+button::after,
+a.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--highlight-empty);
+  z-index: 2;
+  border-radius: var(--radius);
+}
+
+button:hover::after,
+a.button:hover::after {
+  background-color: var(--highlight);
+}
+
+button:active,
+a.button:active {
+  transform: scale(0.95);
+}
+
+/* Pattern */
+
+.pattern {
+    border: 12px solid transparent;
+    border-image-source: url('./PostcardPattern.svg');
+    border-image-slice: 12;
+    border-image-repeat: round;
+    outline: 8px solid var(--base);
+    outline-offset: -20px;
+  }
