@@ -1,36 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Container from '../layouts/Container.astro';
-import Button from '../components/Button.astro';
+import Navigation from '../components/Navigation.astro';
 
+import Details from '../components/Details.astro';
+import AccommodationTravel from '../components/AccommodationTravel.astro';
+import FAQ from '../components/FAQ.astro';
+import Menu from '../components/Menu.astro';
+import RSVP from '../components/RSVP.astro';
 ---
 
 <Layout>
-	<Container containerSize="full" class="pattern" bgColour="pink">
+	<Container class="min-h-svh pattern">
 	<h1>Marie & Tommy<br>
 		27th September 2025<br>
 		Symondsbury Estate</h1>
 	<h2>We’re getting married<br>
 		and you’re invited!</h2>
-		<Button label="RSVP" href="./"/>
 	</Container>
-	<Container bgColour="var(--white)">
-		<h2>Event details</h2>
-		<p>Ceremony: Time, date, location (with a map or link to directions).
-			Reception: Time, location (if different).
-			Dress code (if applicable).</p>
-	</Container>
-	<Container>
-		<h2>Accommodation & Travel</h2>
-		<p>Nearby hotels or lodging options. Directions to the venue(s). Transportation tips (e.g., parking, public transport, carpooling).</p>
-		<h3>Make a trip out of it</h3>
-		<p>Walks. Cafe. Beach. Bridport.</p>
-	</Container>
-	<Container>
-		<h2>FAQ</h2>
-		<p>Kids. Plus ones. Accessibility.</p>
-	</Container>
-	<Container>
-		<h2>RSVP and contact</h2>
-	</Container>
+	<Navigation/>
+
+	<Details/>
+	<AccommodationTravel/>
+	<FAQ/>
+	<Menu/>
+	<RSVP/>
 </Layout>

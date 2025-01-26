@@ -1,19 +1,12 @@
 ---
-const { bgColour, containerSize, class: additionalClass, ...rest } = Astro.props;
+const { 
+  class: additionalClasses, 
+  id: additionalId = '',
+  animate = true
+} = Astro.props;
 
-const baseClasses =
-  containerSize === "grid"
-    ? "container grid-container"
-    : containerSize === "full"
-    ? "container full-container"
-    : "container";
-
-const finalClasses = `${baseClasses} ${additionalClass || ""}`.trim();
+const containerClass = `p-16 ${animate ? 'animate-container' : ''} ${additionalClasses}`;
 ---
-<div
-    class={finalClasses}
-    style={bgColour ? `background-color: ${bgColour};` : undefined}
-    {...rest}
->
+<div id={`${additionalId}`} class={containerClass}>
     <slot />
 </div>
