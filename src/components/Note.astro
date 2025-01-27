@@ -6,7 +6,7 @@ interface Props {
 const { header } = Astro.props;
 ---
 
-<div class="flex flex-row justify-start gap-8">
-    {header && <h4 class="w-20">{header}</h4>}
+<div class="flex flex-row justify-start gap-4 md:gap-8">
+    {header && <h3 class="min-w-32">{header}</h3>}
     <p class="note"><slot /></p>
 </div>

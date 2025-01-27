@@ -26,7 +26,7 @@
         @apply font-bold leading-tight text-black;
       }
       
-      h1 {
+      h1, .big-button {
         @apply text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-4 md:mb-8;
       }
     
@@ -34,7 +34,7 @@
         @apply text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-2 md:mb-4;
       }
     
-      h3 {
+      h3, .note {
         @apply text-lg lg:text-2xl 2xl:text-3xl mb-2 md:mb-4;
       }
     
@@ -58,8 +58,37 @@
         @apply underline underline-offset-2 decoration-shade hover:decoration-black;
       }
 
+      .note {
+        @apply font-normal;
+      }
+
     /* Buttons */
 
+    .button {
+        @apply no-underline bg-[#ededed] px-4 py-2 rounded-full hover:scale-95 transition-all duration-100 ease-in-out;
+    }
+
+    .big-button {
+        @apply no-underline bg-[#dedede] px-8 py-4 rounded-full rotate-6 hover:scale-95 transition-all duration-100 ease-in-out;
+    }
+
+    .price {
+        @apply px-4 py-2 rounded-full;
+    }
+
+    /* Price length-based colors */
+    .price:is([data-length="3"]) {
+        @apply bg-[red];
+    }
+
+    .price:is([data-length="2"]) {
+        @apply bg-[orange];
+    }
+
+    .price:is([data-length="1"]) {
+        @apply bg-[green];
+    }
+    
     /* Navigation */
 
     .navigation {

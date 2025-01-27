@@ -21,8 +21,8 @@ const { header, image, link, price } = Astro.props;
         <h3 class="mt-4 md:mt-8">{header}</h3>
         <p class="flex-grow"><slot /></p>
     </div>
-    <div class="flex flex-row justify-between">
-        {price && <div>{price}</div>}
-        {link && <a href={link} target="_blank">View and book</a>}
+    <div class="flex flex-row justify-between mt-4 md:mt-8">
+        {price && <p class="price mb-0" data-length={price.length}>{price}</p>}
+        {link && <a href={link} target="_blank" class="button">View and book</a>}
     </div>
 </div>

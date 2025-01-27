@@ -9,9 +9,8 @@ import map from '../assets/MapExample.jpg';
 <Container class="bg-[#ededed]">
     <div class="grid grid-cols-12 gap-12">
         <div class="col-span-full md:col-span-4 md:sticky top-16 h-fit">
-            <h2>Details</h2>
+            <h2>Location</h2>
             <div>
-                <h3>Location</h3>
                 <p>The Tithe Barn
                 <br>Mill Lane
                 <br>Symondsbury
@@ -21,20 +20,19 @@ import map from '../assets/MapExample.jpg';
             </div>
         </div>
         <div class="col-span-full md:col-span-8">
-            <Image src={map} alt="Details" class="w-full"/>
+            <Image src={map} alt="Details" class="w-full -rotate-2"/>
         </div>
     </div>
 </Container>
-<Container class="bg-[#f9f9f9]">
-    <div class="grid grid-cols-12 gap-8 md:gap-12">
-        <div class="col-span-full md:col-span-6">
+
+    <div class="grid grid-cols-12">
+        <Container class="col-span-full md:col-span-6 bg-[#f9f9f9]">
             <Schedule/>
-        </div>
-        <div class="col-span-full md:col-span-6">
-        <div class="mb-8 md:mb-12">
-        <h3>Dresscode</h3>
-        <p>We're going for a smart-ish vibe. We'd love you to dress up, but if you're not comfortable, please don't feel obliged to.</p>
-        <p>Most importantly, <b>bring some good dancing shoes!</b> We want you to be comfortable and dance the night away.</p>
-    </div>
-</div>
-</Container>
+        </Container>
+        <Container class="col-span-full md:col-span-6 bg-[#dedede]">
+            <div class="mb-8 md:mb-12">
+                <h2>Dresscode</h2>
+                <p>We're going for a smart-ish vibe. We'd love you to dress up, but if you're not comfortable, please don't feel obliged to.</p>
+                <p>Most importantly, <b>bring some good dancing shoes!</b> We want you to be comfortable and dance the night away.</p>
+            </div>
+    </Container>
