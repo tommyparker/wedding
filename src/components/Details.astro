@@ -8,7 +8,7 @@ import map from '../assets/MapExample.jpg';
 
 <Container class="bg-[#ededed]">
     <div class="grid grid-cols-12 gap-12">
-        <div class="col-span-full md:col-span-4 md:sticky top-16 h-fit">
+        <div class="col-span-12 md:col-span-4 md:sticky top-16 h-fit">
             <h2>Location</h2>
             <div>
                 <p>The Tithe Barn
@@ -19,15 +19,15 @@ import map from '../assets/MapExample.jpg';
                 <br><a href="https://what3words.com/hovered.jaundice.dumps">///hovered.jaundice.dumps</a></p>
             </div>
         </div>
-        <!-- <Image src={map} alt="map" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" class="max-w-full col-span-full md:col-span-8 -rotate-2 object-contain"/> -->
+        <Image src={map} alt="map" loading="lazy" sizes="(max-width: 768px) 100vw, 50vw" class="max-w-full col-span-12 md:col-span-8 -rotate-2 object-contain"/>
     </div>
 </Container>
 
     <div class="grid grid-cols-12">
-        <Container class="col-span-full md:col-span-6 bg-[#f9f9f9]">
+        <Container class="col-span-12 md:col-span-6 bg-[#f9f9f9]">
             <Schedule/>
         </Container>
-        <Container class="col-span-full md:col-span-6 bg-[#dedede]">
+        <Container class="col-span-12 md:col-span-6 bg-[#dedede]">
             <div class="mb-8 md:mb-12">
                 <h2>Dresscode</h2>
                 <p>We're going for a smart-ish vibe. We'd love you to dress up, but if you're not comfortable, please don't feel obliged to.</p>
