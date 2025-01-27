@@ -1,25 +1,40 @@
 ---
 import Container from '../layouts/Container.astro';
 import Schedule from './Schedule.astro';
+
+import { Image } from 'astro:assets';
+import map from '../assets/MapExample.jpg';
 ---
 
 <Container>
     <div class="grid grid-cols-12 gap-12">
-        <h2 class="col-span-12">Details</h2>
-        <div class="col-span-6">
-            <h3>Location</h3>
-            <p>The Tithe Barn
-            <br>Mill Lane
-            <br>Symondsbury
-            <br>Bridport DT6 6HG</p>
-            <p><a href="https://www.google.com/maps/place/Symondsbury+Estate/@50.740055,-2.7869436,632m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4872645392321df5:0x64d895008f99ec85!8m2!3d50.740055!4d-2.7869436!16s%2Fg%2F1tdw7hrv?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">View on Google Maps</a>
-            <br><a href="https://what3words.com/hovered.jaundice.dumps">///hovered.jaundice.dumps</a></p>
+        <div class="col-span-4 sticky top-16 h-fit">
+            <h2>Details</h2>
+            <div>
+                <h3>Location</h3>
+                <p>The Tithe Barn
+                <br>Mill Lane
+                <br>Symondsbury
+                <br>Bridport DT6 6HG</p>
+                <p><a href="https://www.google.com/maps/place/Symondsbury+Estate/@50.740055,-2.7869436,632m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4872645392321df5:0x64d895008f99ec85!8m2!3d50.740055!4d-2.7869436!16s%2Fg%2F1tdw7hrv?entry=ttu&g_ep=EgoyMDI1MDEyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank">View on Google Maps</a>
+                <br><a href="https://what3words.com/hovered.jaundice.dumps">///hovered.jaundice.dumps</a></p>
+            </div>
         </div>
-        <Schedule/>
-        <div class="col-span-6">
-            <h3>Dresscode</h3>
-            <p>We're going for a smart-ish vibe. We'd love you to dress up, but if you're not comfortable, please don't feel obliged to.</p>
-            <p>Most importantly, <b>bring some good dancing shoes!</b> We want you to be comfortable and dance the night away.</p>
+        <div class="col-span-8">
+            <Image src={map} alt="Details" class="w-full"/>
         </div>
     </div>
+</Container>
+<Container>
+    <div class="grid grid-cols-12 gap-12">
+        <div class="col-span-6">
+            <Schedule/>
+        </div>
+        <div class="col-span-6">
+            <div class="mb-12">
+        <h3>Dresscode</h3>
+        <p>We're going for a smart-ish vibe. We'd love you to dress up, but if you're not comfortable, please don't feel obliged to.</p>
+        <p>Most importantly, <b>bring some good dancing shoes!</b> We want you to be comfortable and dance the night away.</p>
+    </div>
+</div>
 </Container>

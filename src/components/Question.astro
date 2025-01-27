@@ -1,0 +1,36 @@
+---
+interface Props {
+    question: string;
+    answer: string;
+}
+
+const { question, answer } = Astro.props;
+---
+
+<div class="question">
+    <button class="question-header" aria-expanded="false">
+        <h3 class="mb-0">{question}</h3>
+        <svg 
+            class="question-icon" 
+            width="20" 
+            height="20" 
+            viewBox="0 0 20 20"
+        >
+            <path d="M6 8l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+    <div class="question-content" hidden>
+        <div class="question-body">
+            {answer}
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.question-header').forEach(button => {
+        button.addEventListener('click', () => {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+            button.setAttribute('aria-expanded', String(!expanded));
+        });
+    });
+</script> 
