@@ -15,7 +15,7 @@
 
     /* Typography */
     body {
-        @apply font-sans text-base lg:text-lg xl:text-xl leading-normal text-black dark:text-paper tracking-wide;
+        @apply font-sans text-base lg:text-lg xl:text-xl leading-normal text-black tracking-wide;
         font-variant-numeric: lining-nums tabular-nums;
         font-feature-settings: 'dlig' on, 'ss01' on, 'ss02' on, 'ss04' on;
         text-rendering: optimizeLegibility;
@@ -23,19 +23,19 @@
       }
       
       h1, h2, h3, h4 {
-        @apply font-bold leading-tight text-black dark:text-paper;
+        @apply font-bold leading-tight text-black;
       }
       
       h1 {
-        @apply text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-8;
+        @apply text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-4 md:mb-8;
       }
     
       h2 {
-        @apply text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-4;
+        @apply text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl mb-2 md:mb-4;
       }
     
       h3 {
-        @apply text-lg lg:text-2xl 2xl:text-3xl mb-4;
+        @apply text-lg lg:text-2xl 2xl:text-3xl mb-2 md:mb-4;
       }
     
       h4 {
@@ -43,7 +43,7 @@
       }
       
       p, blockquote, ul, li, input {
-        @apply text-base lg:text-lg xl:text-xl leading-normal mb-4 last:mb-0;
+        @apply text-base lg:text-lg xl:text-xl leading-normal mb-2 md:mb-4 last:mb-0;
       }
 
       ul {
@@ -55,7 +55,7 @@
       }
 
       a {
-        @apply underline underline-offset-2 decoration-shade hover:decoration-black dark:decoration-tint dark:hover:decoration-paper;
+        @apply underline underline-offset-2 decoration-shade hover:decoration-black;
       }
 
     /* Buttons */
@@ -90,7 +90,7 @@
     /* FAQ */
 
     .faq-list {
-        @apply col-span-8;
+        @apply col-span-full lg:col-span-8;
     }
 
     .question {
@@ -98,16 +98,16 @@
   }
 
   .question-header {
-      @apply w-full py-4 flex justify-between items-center border-none text-left cursor-pointer transition-all duration-300 ease-in-out;
+      @apply w-full py-2 md:py-4 flex justify-between items-center border-none text-left cursor-pointer transition-all duration-300 ease-in-out;
   }
 
   .question-header:hover,
   .question-header[aria-expanded="true"] {
-      @apply bg-shade p-4;
+      @apply bg-shade py-2 md:py-4 px-2 md:px-4;
   }
 
   .question-content {
-      @apply bg-shade py-0 px-4 max-h-0 overflow-hidden transition-all duration-300 ease-out;
+      @apply bg-shade py-0 px-2 md:px-4 max-h-0 overflow-hidden transition-all duration-300 ease-out;
   }
 
   .question-content[hidden] {
@@ -115,7 +115,7 @@
   }
 
   .question-header[aria-expanded="true"] + .question-content {
-      @apply max-h-[500px] pb-4 px-4;
+      @apply max-h-[500px] pb-2 md:pb-4 px-2 md:px-4;
   }
 
   .question-header[aria-expanded="true"] .question-icon {

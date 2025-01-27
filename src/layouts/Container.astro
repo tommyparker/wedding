@@ -5,7 +5,7 @@ const {
   animate = true
 } = Astro.props;
 
-const containerClass = `p-16 ${animate ? 'animate-container' : ''} ${additionalClasses}`;
+const containerClass = `p-8 md:p-16 ${animate ? 'animate-container' : ''} ${additionalClasses}`;
 ---
 <div id={`${additionalId}`} class={containerClass}>
     <slot />
