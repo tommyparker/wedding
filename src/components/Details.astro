@@ -7,8 +7,8 @@ import map from '../assets/MapExample.jpg';
 ---
 
 <Container class="bg-[#ededed]">
-    <div class="grid grid-cols-12 gap-12">
-        <div class="col-span-12 md:col-span-4 md:sticky top-16 h-fit">
+    <div class="block md:grid md:grid-cols-12 md:gap-12">
+        <div class="mb-8 md:mb-0 md:col-span-4 md:sticky top-16 h-fit">
             <h2>Location</h2>
             <div>
                 <p>The Tithe Barn
@@ -19,17 +19,13 @@ import map from '../assets/MapExample.jpg';
                 <br><a href="https://what3words.com/hovered.jaundice.dumps">///hovered.jaundice.dumps</a></p>
             </div>
         </div>
-        <div class="col-span-12 md:col-span-8 relative px-4">
-            <div class="transform-gpu">
-                <Image 
-                    src={map} 
-                    alt="map" 
-                    loading="lazy" 
-                    sizes="(max-width: 768px) 100vw, 50vw" 
-                    class="w-full h-auto -rotate-2 object-contain scale-[0.95]"
-                />
-            </div>
-        </div>
+        <Image 
+            src={map} 
+            alt="map" 
+            loading="lazy" 
+            sizes="(max-width: 768px) 100vw, 50vw" 
+            class="w-full h-auto -rotate-2 object-contain md:col-span-8"
+        />
     </div>
 </Container>
 
