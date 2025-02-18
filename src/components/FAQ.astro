@@ -3,10 +3,22 @@ import Container from '../layouts/Container.astro';
 import Question from './Question.astro';
 ---
 
-<Container id="faq" class="bg-[#ededed]">
+<Container id="faq" class="bg-paper2 !text-ink2">
     <div class="grid grid-cols-12 gap-4 md:gap-8">
         <h2 class="col-span-12 mb-0">FAQ</h2>
         <div class="faq-list">
+            <Question 
+            question="When should I RSVP by?"
+            answer="Please RSVP by the 30th July 2025."
+            />
+            <Question 
+            question="What time should I arrive?"
+            answer="The ceremony will begin at 13:00pm, so please arrive no later than 12:30pm."
+            />
+            <Question 
+            question="Can I bring a plus one?"
+            answer="If your invite specifies a plus one, then absolutely! If your invite does not specify a plus one, then unfortunately not."
+            />
             <Question 
             question="Are kids welcome?"
             answer="While we love kids, we just don't love yours (jokes!). We've decided to make this an adults-only celebration to allow all our guests to relax and enjoy themselves fully."
@@ -20,6 +32,14 @@ import Question from './Question.astro';
                 answer={`Our venue is fully wheelchair accessible and accessible restrooms. There is also car park outside the venue, with disabled parking bays closest to the building.
 
                 Please let us know if you have any specific requirements, and we'll be happy to accommodate them.`}
+            />
+            <Question 
+                question="Should I bring a gift?"
+                answer={`You're not obliged to bring a gift, but if you'd like to, we've got a registry on ———.`}
+            />
+            <Question 
+                question="I have more questions. Who can I contact?"
+                answer={`Send Tommy an email (tommydraws@gmail.com) if it's a fun question, or Marie (mariewiscombe@gmail.com) if it's a practical question.`}
             />
         </div>
     </div>

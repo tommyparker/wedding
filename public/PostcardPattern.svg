@@ -1,26 +1,26 @@
 <svg width="152" height="152" viewBox="0 0 152 152" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M140 24L152 32V64L140 56V24Z" fill="#D35445"/>
-<path d="M24 12L32 0H64L56 12H24Z" fill="#D35445"/>
-<path d="M12 128L0 120L4.19629e-06 88L12 96L12 128Z" fill="#D35445"/>
-<path d="M128 140L120 152H88L96 140H128Z" fill="#D35445"/>
-<path d="M140 88L152 96V128L140 120V88Z" fill="#4552AF"/>
-<path d="M88 12L96 0H128L120 12H88Z" fill="#4552AF"/>
-<path d="M12 64L0 56L4.19629e-06 24L12 32L12 64Z" fill="#4552AF"/>
-<path d="M64 140L56 152H24L32 140H64Z" fill="#4552AF"/>
-<path d="M140 56L152 64V96L140 88V56Z" fill="#E8D9BA"/>
-<path d="M140 120L152 128V140H140V120Z" fill="#E8D9BA"/>
-<path d="M140 12L152 12V32L140 24V12Z" fill="#E8D9BA"/>
-<path d="M56 12L64 0H96L88 12H56Z" fill="#E8D9BA"/>
-<path d="M120 12L128 0H140V12L120 12Z" fill="#E8D9BA"/>
-<path d="M12 12V0H32L24 12H12Z" fill="#E8D9BA"/>
-<path d="M12 96L8.67847e-06 88L1.28748e-05 56L12 64L12 96Z" fill="#E8D9BA"/>
-<path d="M12 32L1.63079e-05 24L1.78815e-05 12L12 12L12 32Z" fill="#E8D9BA"/>
-<path d="M12 140H0L2.62268e-06 120L12 128L12 140Z" fill="#E8D9BA"/>
-<path d="M96 140L88 152H56L64 140H96Z" fill="#E8D9BA"/>
-<path d="M32 140L24 152H12L12 140H32Z" fill="#E8D9BA"/>
-<path d="M140 140V152H120L128 140L140 140Z" fill="#E8D9BA"/>
-<path d="M140 0H152V12L140 12V0Z" fill="#E8D9BA"/>
-<path d="M140 140H152V152H140V140Z" fill="#E8D9BA"/>
-<path d="M0 140H12L12 152H0V140Z" fill="#E8D9BA"/>
-<path d="M0 0H12V12L1.78815e-05 12L0 0Z" fill="#E8D9BA"/>
+<path d="M140 24L152 32V64L140 56V24Z" fill="#df6339"/>
+<path d="M24 12L32 0H64L56 12H24Z" fill="#df6339"/>
+<path d="M12 128L0 120L4.19629e-06 88L12 96L12 128Z" fill="#df6339"/>
+<path d="M128 140L120 152H88L96 140H128Z" fill="#df6339"/>
+<path d="M140 88L152 96V128L140 120V88Z" fill="#90abad"/>
+<path d="M88 12L96 0H128L120 12H88Z" fill="#90abad"/>
+<path d="M12 64L0 56L4.19629e-06 24L12 32L12 64Z" fill="#90abad"/>
+<path d="M64 140L56 152H24L32 140H64Z" fill="#90abad"/>
+<path d="M140 56L152 64V96L140 88V56Z" fill="#ece3cf"/>
+<path d="M140 120L152 128V140H140V120Z" fill="#ece3cf"/>
+<path d="M140 12L152 12V32L140 24V12Z" fill="#ece3cf"/>
+<path d="M56 12L64 0H96L88 12H56Z" fill="#ece3cf"/>
+<path d="M120 12L128 0H140V12L120 12Z" fill="#ece3cf"/>
+<path d="M12 12V0H32L24 12H12Z" fill="#ece3cf"/>
+<path d="M12 96L8.67847e-06 88L1.28748e-05 56L12 64L12 96Z" fill="#ece3cf"/>
+<path d="M12 32L1.63079e-05 24L1.78815e-05 12L12 12L12 32Z" fill="#ece3cf"/>
+<path d="M12 140H0L2.62268e-06 120L12 128L12 140Z" fill="#ece3cf"/>
+<path d="M96 140L88 152H56L64 140H96Z" fill="#ece3cf"/>
+<path d="M32 140L24 152H12L12 140H32Z" fill="#ece3cf"/>
+<path d="M140 140V152H120L128 140L140 140Z" fill="#ece3cf"/>
+<path d="M140 0H152V12L140 12V0Z" fill="#ece3cf"/>
+<path d="M140 140H152V152H140V140Z" fill="#ece3cf"/>
+<path d="M0 140H12L12 152H0V140Z" fill="#ece3cf"/>
+<path d="M0 0H12V12L1.78815e-05 12L0 0Z" fill="#ece3cf"/>
 </svg>

@@ -15,7 +15,7 @@
 
     /* Typography */
     body {
-        @apply font-sans text-base lg:text-lg xl:text-xl leading-normal text-black tracking-wide;
+        @apply font-sans text-base lg:text-lg xl:text-xl leading-normal text-ink1 tracking-wide;
         font-variant-numeric: lining-nums tabular-nums;
         font-feature-settings: 'dlig' on, 'ss01' on, 'ss02' on, 'ss04' on;
         text-rendering: optimizeLegibility;
@@ -23,7 +23,7 @@
       }
       
       h1, h2, h3, h4 {
-        @apply font-bold leading-tight text-black;
+        @apply font-bold leading-tight;
       }
       
       h1, .big-button {
@@ -46,6 +46,10 @@
         @apply text-base lg:text-lg xl:text-xl leading-normal mb-2 md:mb-4 last:mb-0;
       }
 
+      .small-text {
+        @apply text-xs lg:text-base xl:text-lg;
+      }
+
       ul {
         @apply list-disc list-inside;
       }
@@ -55,7 +59,7 @@
       }
 
       a {
-        @apply underline underline-offset-2 decoration-shade hover:decoration-black;
+        @apply underline underline-offset-2 decoration-dotted hover:decoration-solid;
       }
 
       .note {
@@ -65,11 +69,11 @@
     /* Buttons */
 
     .button {
-        @apply no-underline bg-[#ededed] px-4 py-2 rounded-full hover:scale-95 transition-all duration-100 ease-in-out;
+        @apply no-underline bg-black text-paper3 px-4 py-2 rounded-full hover:scale-95 transition-all duration-100 ease-in-out;
     }
 
     .big-button {
-        @apply no-underline bg-[#dedede] px-8 py-4 rounded-full rotate-6 hover:scale-95 transition-all duration-100 ease-in-out;
+        @apply no-underline bg-spot2 px-8 py-4 rounded-full hover:scale-95 transition-all duration-100 ease-in-out;
     }
 
     .price {
@@ -78,15 +82,15 @@
 
     /* Price length-based colors */
     .price:is([data-length="3"]) {
-        @apply bg-[red];
+        @apply bg-spot1;
     }
 
     .price:is([data-length="2"]) {
-        @apply bg-[orange];
+        @apply bg-spot2;
     }
 
     .price:is([data-length="1"]) {
-        @apply bg-[green];
+        @apply bg-spot3;
     }
     
     /* Navigation */
@@ -111,9 +115,16 @@
         border-image-source: url('../PostcardPattern.svg');
         border-image-slice: 12;
         border-image-repeat: round;
-        outline: 8px solid var(--base);
-        outline-offset: -20px;
+        outline: 24px solid theme('colors.paper');
+        outline-offset: -36px;
         z-index: 1;
+    }
+
+    .grid-pattern {
+      background-size: 40px 40px;
+      background-image:
+        linear-gradient(to right, theme('colors.spot5') 1px, transparent 1px),
+        linear-gradient(to bottom, theme('colors.spot5') 1px, transparent 1px);
     }
 
     /* FAQ */
@@ -123,8 +134,12 @@
     }
 
     .question {
-      @apply w-full mb-[1px];
-  }
+      @apply w-full mb-[1px] border-b border-ink2;
+    }
+
+    .question:last-child {
+      @apply border-b-0;
+    }
 
   .question-header {
       @apply w-full py-2 md:py-4 flex justify-between items-center border-none text-left cursor-pointer transition-all duration-300 ease-in-out;
@@ -132,11 +147,11 @@
 
   .question-header:hover,
   .question-header[aria-expanded="true"] {
-      @apply bg-shade py-2 md:py-4 px-2 md:px-4;
+      @apply py-2 md:py-4 px-2 md:px-4;
   }
 
   .question-content {
-      @apply bg-shade py-0 px-2 md:px-4 max-h-0 overflow-hidden transition-all duration-300 ease-out;
+      @apply py-0 px-2 md:px-4 max-h-0 overflow-hidden transition-all duration-300 ease-out;
   }
 
   .question-content[hidden] {

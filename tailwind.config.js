@@ -3,27 +3,18 @@ export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     colors: {
-      'spot1': {
-        5: '#e75f3a',
-        10: '#e75f3a',
-      },
-      'spot2': {
-        5: '#e75f3a',
-        10: '#e75f3a',
-      },
-      'spot3': {
-        5: '#e75f3a',
-        10: '#e75f3a',
-      },
-      'spot4': {
-        5: '#e75f3a',
-        10: '#e75f3a',
-      },
+      'spot1': '#df6339',
+      'spot2': '#f5ca4c',
+      'spot3': '#90abad',
+      'spot4': '#bd8f4f',
+      'spot5': '#c8d5d6',
       'white': '#ffffff',
-      'paper': '#f7f4ea',
-      'black': '#0e0e0e',
-      'shade': 'rgba(0,0,0,0.2)',
-      'tint': 'rgba(255,255,255,0.2)',
+      'paper': '#ece3cf',
+      'paper2': '#efdaa3',
+      'paper3': '#f6f1e7',
+      'black': '#2a2b1d',
+      'ink1': '#3c1710',
+      'ink2': '#8d542e',
     },
     fontFamily: {
       sans: ['Athletics', 'sans-serif'],

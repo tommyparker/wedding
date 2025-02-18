@@ -6,7 +6,7 @@ import { Image } from 'astro:assets';
 import map from '../assets/MapExample.jpg';
 ---
 
-<Container class="bg-[#ededed]">
+<Container class="bg-paper3 !text-black grid-pattern">
     <div class="block md:grid md:grid-cols-12 md:gap-12">
         <div class="mb-8 md:mb-0 md:col-span-4 md:sticky top-16 h-fit">
             <h2>Location</h2>
@@ -30,13 +30,14 @@ import map from '../assets/MapExample.jpg';
 </Container>
 
     <div class="grid grid-cols-12">
-        <Container class="col-span-12 md:col-span-6 bg-[#f9f9f9]">
+        <Container class="col-span-12 md:col-span-6 bg-paper2 !text-ink2">
             <Schedule/>
         </Container>
-        <Container class="col-span-12 md:col-span-6 bg-[#dedede]">
-            <div class="mb-8 md:mb-12">
+        <Container class="col-span-12 md:col-span-6 bg-paper flex flex-col justify-end">
+            <div>
                 <h2>Dresscode</h2>
                 <p>We're going for a smart-ish vibe. We'd love you to dress up, but if you're not comfortable, please don't feel obliged to.</p>
-                <p>Most importantly, <b>bring some good dancing shoes!</b> We want you to be comfortable and dance the night away.</p>
+                <p>Most importantly, <span class="inline-block animate-bounce font-bold">bring some good dancing shoes!</span> We want you to be comfortable and dance the night away.</p>
             </div>
-    </Container>
+        </Container>
+    </div>

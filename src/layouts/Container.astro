@@ -2,11 +2,12 @@
 const { 
   class: additionalClasses, 
   id: additionalId = '',
-  animate = true
+  animate = true,
+  style = ''
 } = Astro.props;
 
 const containerClass = `p-8 md:p-16 ${animate ? 'animate-container' : ''} ${additionalClasses}`;
 ---
-<div id={`${additionalId}`} class={containerClass}>
+<div id={`${additionalId}`} class={containerClass} style={style}>
     <slot />
 </div>
