@@ -17,7 +17,11 @@ export default {
       'ink2': '#8d542e',
     },
     fontFamily: {
-      sans: ['Athletics', 'sans-serif'],
+      display: ['WS MODERN EPHEMERA', 'sans-serif'],
+      sans1: ['WS WARBLER', 'sans-serif'],
+      sans2: ['WS SPIRITIST', 'sans-serif'],
+      serif1: ['SchoolBook', 'serif'],
+      serif2: ['SchoolBook-Condensed', 'serif'],
     },
     container: {
       center: true,

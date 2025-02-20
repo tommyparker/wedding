@@ -4,18 +4,36 @@
 
 @layer base {
 
-    @font-face {
-        font-family: 'Athletics';
-        src: url('/fonts/Athletics-Bold.woff') format('woff'),
-             url('/fonts/Athletics-Bold.woff2') format('woff2');
-        font-style: normal;
-        font-weight: 700;
-        text-rendering: optimizeLegibility;
-      }
+  @font-face {
+    font-family: 'WS WARBLER';
+    src: url('/fonts/WSWARBLERRegular.woff2') format('woff2'),
+        url('/fonts/WSWARBLERRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS SPIRITIST';
+    src: url('/fonts/WSSPIRITISTRegular.woff2') format('woff2'),
+        url('/fonts/WSSPIRITISTRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'WS MODERN EPHEMERA';
+    src: url('/fonts/WSMODERNEPHEMERARegular.woff2') format('woff2'),
+        url('/fonts/WSMODERNEPHEMERARegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
     /* Typography */
     body {
-        @apply font-sans text-base lg:text-lg xl:text-xl leading-normal text-ink1 tracking-wide;
+        @apply font-serif1 text-base lg:text-lg xl:text-xl leading-normal text-ink1;
         font-variant-numeric: lining-nums tabular-nums;
         font-feature-settings: 'dlig' on, 'ss01' on, 'ss02' on, 'ss04' on;
         text-rendering: optimizeLegibility;
@@ -23,7 +41,7 @@
       }
       
       h1, h2, h3, h4 {
-        @apply font-bold leading-tight;
+        @apply font-bold leading-tight font-sans1 tracking-widest;
       }
       
       h1, .big-button {
@@ -69,7 +87,7 @@
     /* Buttons */
 
     .button {
-        @apply no-underline bg-black text-paper3 px-4 py-2 rounded-full hover:scale-95 transition-all duration-100 ease-in-out;
+        @apply no-underline bg-black text-paper3 px-4 py-2 rounded-full hover:scale-95 transition-all duration-100 ease-in-out font-serif2;
     }
 
     .big-button {
@@ -115,8 +133,8 @@
         border-image-source: url('../PostcardPattern.svg');
         border-image-slice: 12;
         border-image-repeat: round;
-        outline: 24px solid theme('colors.paper');
-        outline-offset: -36px;
+        outline: 12px solid theme('colors.paper');
+        outline-offset: -24px;
         z-index: 1;
     }
 

@@ -20,7 +20,7 @@ const rotations = [1, -1.5, 2, -0.5];
 const rotation = rotations[index % rotations.length];
 ---
 
-<div class="mb-8 md:mb-0 md:col-span-6 lg:col-span-4 flex flex-col">
+<div class="mb-8 md:mb-0 md:col-span-6 xl:col-span-3 flex flex-col">
     {image && (
         <div>
             <Image 
@@ -34,11 +34,11 @@ const rotation = rotations[index % rotations.length];
         </div>
     )}
     <div class="flex flex-col flex-grow">
-        <h3 class="mt-4 md:mt-8">{header}</h3>
+        <h3 class="mt-4 md:mt-8 font-serif2 tracking-tight">{header}</h3>
         <p class="flex-grow"><slot /></p>
     </div>
     <div class="flex flex-row justify-between mt-4 md:mt-8">
-        {price && <p class="price mb-0" data-length={price.length}>{price}</p>}
+        {price && <p class="price mb-0 font-bold font-serif2" data-length={price.length}>{price}</p>}
         {link && <a href={link} target="_blank" class="button">View and book</a>}
     </div>
 </div>
