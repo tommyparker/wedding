@@ -4,9 +4,15 @@ interface Props {
 }
 
 const { header } = Astro.props;
+const rotation = Math.random() * 6 - 3; // Random number between -3 and 3
+const pRotation = Math.random() * 6 - 3; // Different random rotation for paragraph
 ---
 
-<div class="flex flex-row justify-start gap-4 md:gap-8">
-    {header && <h3 class="min-w-32">{header}</h3>}
-    <p class="note"><slot /></p>
+<div class="flex flex-row md:grid md:grid-cols-12 justify-start border-b border-ink3 last:border-b-0">
+    {header && <div class="col-span-4 min-w-32">
+                <h3 style={`transform: rotate(${rotation}deg)`} class="font-serif3 uppercase font-normal mb-0 tracking-normal inline-block py-2">{header}</h3>
+            </div>}
+   <div class="col-span-8 border-l border-ink3 pl-4">
+    <p style={`transform: rotate(${pRotation}deg)`} class="note font-serif3 tracking-norma inline-block py-2"><slot /></p>
+    </div>
 </div>
