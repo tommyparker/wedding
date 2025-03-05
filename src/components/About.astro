@@ -1,0 +1,14 @@
+---
+import Container from '../layouts/Container.astro';
+import { Image } from "astro:assets";
+import Us1 from "../assets/Us1.jpg";
+import Us2 from "../assets/Us2.jpg";
+import Us3 from "../assets/Us3.jpg";
+---
+
+<Container id="about" class="bg-paper grid grid-cols-12 gap-6 md:gap-12">
+    <h1 class="col-span-12 font-serif2 uppercase italic mb-0">About</h1>
+    <p class="col-span-6 italic">Woo! We're getting married! We've been together 13 wonderful years and figured we should tie the knot <strike>for that sweet tax break</strike> as a symbol of our love for each other.</p>
+    <Image src={Us2} alt="Us" class="col-span-4 col-start-4 -rotate-2 border-8 border-white mt-12" />
+    <Image src={Us1} alt="Us" class="col-span-5 rotate-3 border-8 border-white" />
+</Container>

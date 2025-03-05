@@ -31,15 +31,6 @@
     font-display: swap;
 }
 
-@font-face {
-  font-family: 'MFred';
-  src: url('/fonts/MFred.woff2') format('woff2'),
-      url('/fonts/MFred.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
     /* Typography */
     body {
         @apply font-serif1 text-base lg:text-lg xl:text-xl leading-normal text-ink1;
@@ -53,7 +44,7 @@
         @apply font-bold leading-tight font-sans1 tracking-widest;
       }
       
-      h1, .big-button {
+      h1 {
         @apply text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl mb-4 md:mb-8;
       }
     
@@ -100,7 +91,7 @@
     }
 
     .big-button {
-        @apply no-underline bg-spot2 px-8 py-4 rounded-full hover:scale-95 transition-all duration-100 ease-in-out;
+        @apply text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl no-underline bg-spot2 px-8 pt-3 pb-2 rounded-full hover:scale-95 transition-all duration-100 ease-in-out;
     }
 
     .price {
@@ -174,11 +165,11 @@
 
   .question-header:hover,
   .question-header[aria-expanded="true"] {
-      @apply py-2 md:py-4 px-2 md:px-4;
+      @apply py-2 md:py-4;
   }
 
   .question-content {
-      @apply py-0 px-2 md:px-4 max-h-0 overflow-hidden transition-all duration-300 ease-out;
+      @apply py-0 max-h-0 overflow-hidden transition-all duration-300 ease-out;
   }
 
   .question-content[hidden] {
@@ -186,11 +177,11 @@
   }
 
   .question-header[aria-expanded="true"] + .question-content {
-      @apply max-h-[500px] pb-2 md:pb-4 px-2 md:px-4;
+      @apply max-h-[500px] pb-4 md:pb-12;
   }
 
   .question-header[aria-expanded="true"] .question-icon {
-      @apply rotate-180;
+      @apply rotate-45;
   }
 
   .question-icon {
