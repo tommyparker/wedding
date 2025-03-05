@@ -130,7 +130,7 @@
 
     .pattern {
         border: 12px solid transparent;
-        border-image-source: url('../PostcardPattern.svg');
+        border-image-source: url('/PostcardPattern.svg');
         border-image-slice: 12;
         border-image-repeat: round;
         outline: 12px solid theme('colors.paper');
