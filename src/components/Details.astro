@@ -4,6 +4,7 @@ import Schedule from './Schedule.astro';
 
 import { Image } from 'astro:assets';
 import map from '../assets/MapExample.jpg';
+import Gus from '../assets/Gus2.jpg';
 ---
 
 <Container class="bg-paper3 !text-black grid-pattern">
@@ -34,7 +35,14 @@ import map from '../assets/MapExample.jpg';
             <Schedule/>
         </Container>
         <Container class="col-span-12 md:col-span-6 bg-paper flex flex-col justify-end">
-            <div class="max-w-[600px]">
+            <Image 
+                src={Gus} 
+                alt="Gus" 
+                loading="lazy" 
+                sizes="(max-width: 768px) 100vw, 50vw" 
+                class="w-48 h-auto object-contain"
+            />
+            <div class="max-w-[600px] mt-auto">
                 <h2 class="font-serif2 uppercase italic">Dresscode</h2>
                 <p class="italic">We're going for a smart-ish vibe. We'd love you to dress up, but if you're not comfortable, please don't feel obliged to.</p>
                 <p class="italic">Most importantly, <span class="inline-block animate-bounce font-bold">bring some good dancing shoes!</span> We want you to be comfortable and dance the night away.</p>
