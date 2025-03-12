@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Container from '../layouts/Container.astro';
 import Navigation from '../components/Navigation.astro';
-
+import About from '../components/About.astro';
 import Details from '../components/Details.astro';
 import AccommodationTravel from '../components/AccommodationTravel.astro';
 import FAQ from '../components/FAQ.astro';
@@ -10,17 +10,16 @@ import Menu from '../components/Menu.astro';
 import RSVP from '../components/RSVP.astro';
 
 import { Image } from 'astro:assets';
-import map from '../assets/ColmersHillHalftone2.jpeg';
+import map from '../assets/ColmersHillHalftone3.jpeg';
 ---
 
 <Layout>
 	<Container class="min-h-svh pattern sticky top-0 -z-10 flex flex-col gap-4 justify-between">
 	<div class="flex flex-col gap-2 h-full items-center justify-center flex-1 text-paper3">
+		<h3 class="text-center">You're invited to the wedding of</h3>
 		<h1 class="text-center mb-2 font-display1 text-7xl md:text-8xl lg:text-10xl xl:text-12xl 2xl:text-14xl leading-[0.75] block">
-		Marie & Tommy<br>
-		are getting married
+		Marie & Tommy
 		</h1>
-		<h3 class="text-center">And you're invited!</h3>
 		<Image src={map} alt="Colmers Hill" widths={[500, 800, 1200, 1500]} loading='eager' class="w-full h-full object-cover object-bottom absolute top-0 left-0 -z-10" />
 	</div>
 	<div class="grid grid-cols-12 mt-auto object-center justify-items-center items-center">
@@ -32,6 +31,7 @@ import map from '../assets/ColmersHillHalftone2.jpeg';
 	</div>
 	</Container>
 	<Navigation/>
+	<About/>
 	<Details/>
 	<AccommodationTravel/>
 	<FAQ/>
